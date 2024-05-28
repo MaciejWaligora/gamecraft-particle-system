@@ -1,0 +1,27 @@
+{
+  "name": "gamecraft-particle-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc -watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaciejWaligora/gamecraft-particle-system.git"
+  },
+  "author": "Maciej Waligora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaciejWaligora/gamecraft-particle-system/issues"
+  },
+  "homepage": "https://github.com/MaciejWaligora/gamecraft-particle-system#readme",
+  "dependencies": {
+    "pixijs": "^7.1.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  }
+}
