@@ -29,7 +29,7 @@ class ParticleEmitter extends PIXI.ParticleContainer {
     constructor(config) {
         super(1000, { scale: true, position: true, rotation: true, uvs: true, alpha: true });
         this._particles = [];
-        this._texture = config.texture;
+        this._textures = config.textures;
     }
     update(delta) {
         this._particles.forEach((particle, index) => {
