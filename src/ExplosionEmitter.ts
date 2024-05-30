@@ -6,7 +6,6 @@ export class ExplosionEmitter extends ParticleEmitter<ParticleEmitterConfig> {
 
 
     public emitParticles(x: number, y: number, count: number) {
-        const emitted: Record<number, number> = {}
         for (let i = 0; i < count; i++) {
             const angle = Math.random() * Math.PI * 2;
             const speed = Math.random() * 10;
@@ -24,17 +23,11 @@ export class ExplosionEmitter extends ParticleEmitter<ParticleEmitterConfig> {
                 startSize: 0.009,
                 endSize: 0
             });
-
-            if(emitted[randomSprite]){
-                emitted[randomSprite]++;
-            }else{
-                emitted[randomSprite] = 1
-            }
+            
             particle.x = x;
             particle.y = y;
             this._particles.push(particle);
             this.addChild(particle);
         }
-        console.log(emitted);
     }
 }

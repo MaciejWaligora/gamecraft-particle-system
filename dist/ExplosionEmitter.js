@@ -5,7 +5,6 @@ const ParticleEmitter_1 = require("./ParticleEmitter");
 const Particle_1 = require("./Particle");
 class ExplosionEmitter extends ParticleEmitter_1.ParticleEmitter {
     emitParticles(x, y, count) {
-        const emitted = {};
         for (let i = 0; i < count; i++) {
             const angle = Math.random() * Math.PI * 2;
             const speed = Math.random() * 10;
@@ -21,18 +20,11 @@ class ExplosionEmitter extends ParticleEmitter_1.ParticleEmitter {
                 startSize: 0.009,
                 endSize: 0
             });
-            if (emitted[randomSprite]) {
-                emitted[randomSprite]++;
-            }
-            else {
-                emitted[randomSprite] = 1;
-            }
             particle.x = x;
             particle.y = y;
             this._particles.push(particle);
             this.addChild(particle);
         }
-        console.log(emitted);
     }
 }
 exports.ExplosionEmitter = ExplosionEmitter;
