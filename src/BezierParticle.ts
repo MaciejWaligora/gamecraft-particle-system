@@ -21,7 +21,6 @@ export class BezierParticle<Tconfig extends BezierParticleConfig> extends Partic
         } else {
             super.update(delta);
         }
-
         this.alpha = 1 - t;
         const size = this._startSize + (this._endSize - this._startSize) * t;
         this.scale.set(size);

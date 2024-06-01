@@ -18,3 +18,4 @@ class ParticleSystem {
     }
 }
 exports.ParticleSystem = ParticleSystem;
+//# sourceMappingURL=ParticleSystem.js.map

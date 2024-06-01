@@ -29,3 +29,4 @@ class BezierParticle extends Particle_1.Particle {
     }
 }
 exports.BezierParticle = BezierParticle;
+//# sourceMappingURL=BezierParticle.js.map

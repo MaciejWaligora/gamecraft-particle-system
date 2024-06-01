@@ -42,3 +42,4 @@ class ParticleEmitter extends PIXI.ParticleContainer {
     }
 }
 exports.ParticleEmitter = ParticleEmitter;
+//# sourceMappingURL=ParticleEmitter.js.map

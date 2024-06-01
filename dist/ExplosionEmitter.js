@@ -28,3 +28,4 @@ class ExplosionEmitter extends ParticleEmitter_1.ParticleEmitter {
     }
 }
 exports.ExplosionEmitter = ExplosionEmitter;
+//# sourceMappingURL=ExplosionEmitter.js.map

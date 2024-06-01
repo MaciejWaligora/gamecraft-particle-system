@@ -47,3 +47,4 @@ class Particle extends PIXI.Sprite {
     }
 }
 exports.Particle = Particle;
+//# sourceMappingURL=Particle.js.map
