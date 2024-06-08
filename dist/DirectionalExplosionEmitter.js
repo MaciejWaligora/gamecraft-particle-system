@@ -26,7 +26,7 @@ class DirectionalExplosionEmitter extends ParticleEmitter_1.ParticleEmitter {
                 velocityX: velocityX,
                 velocityY: velocityY,
                 life: life,
-                startSize: 0.2,
+                startSize: 0.01,
                 endSize: 0
             });
             particle.x = x;
