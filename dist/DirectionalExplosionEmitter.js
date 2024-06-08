@@ -9,17 +9,9 @@ class DirectionalExplosionEmitter extends ParticleEmitter_1.ParticleEmitter {
         this._startAngle = 0;
         this._endAngle = Math.PI * 2;
     }
-    _normalizeAngle(angle) {
-        const TWO_PI = Math.PI * 2;
-        angle = angle % TWO_PI;
-        if (angle < 0) {
-            angle += TWO_PI;
-        }
-        return angle;
-    }
     setDirection(startAngle, endAngle) {
-        this._startAngle = this._normalizeAngle(startAngle);
-        this._endAngle = this._normalizeAngle(endAngle);
+        this._startAngle = startAngle;
+        this._endAngle = endAngle;
     }
     emitParticles(x, y, count) {
         for (let i = 0; i < count; i++) {

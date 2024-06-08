@@ -12,17 +12,9 @@ export class DirectionalExplosionEmitter extends ParticleEmitter<DirectionalExpl
     private _startAngle: number = 0;
     private _endAngle: number = Math.PI * 2;
 
-    private _normalizeAngle(angle: number): number {
-        const TWO_PI = Math.PI * 2;
-        angle = angle % TWO_PI;
-        if (angle < 0) {
-            angle += TWO_PI;
-        }
-        return angle;
-    }
     public setDirection(startAngle: number, endAngle: number){
-        this._startAngle = this._normalizeAngle(startAngle);
-        this._endAngle = this._normalizeAngle(endAngle);
+        this._startAngle = startAngle
+        this._endAngle = endAngle
     }
     emitParticles(x: number, y: number, count: number): void {
         for (let i = 0; i < count; i++) {
