@@ -31,7 +31,7 @@ export class DirectionalExplosionEmitter extends ParticleEmitter<DirectionalExpl
                 velocityX: velocityX,
                 velocityY: velocityY,
                 life: life,
-                startSize: 0.1,
+                startSize: 0.01,
                 endSize: 0
             });
             particle.x = x;
